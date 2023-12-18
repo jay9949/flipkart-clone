@@ -158,7 +158,7 @@ const Filter = ({ getCheckboxProps, setPriceRange, priceRange }) => {
             defaultValue={[0, 100]}
             onChangeEnd={(val) => setPriceRange(val)}
           >
-            <RangeSliderTrack style={{ color: "gray" }}>
+            <RangeSliderTrack>
               <RangeSliderFilledTrack bg={"#2874F0"} />
             </RangeSliderTrack>
             <RangeSliderThumb index={0} />

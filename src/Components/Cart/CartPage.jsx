@@ -163,7 +163,7 @@ const CartPage = () => {
           >
             <Text color="blue" fontSize="20" fontWeight="400">
               {" "}
-              Flipkart{" "}
+              No Items in Cart{" "}
             </Text>
           </Box>
           <Box display="block">
@@ -188,7 +188,7 @@ const CartPage = () => {
                 Your cart is empty!
               </Text>
               <Text fontWeight="400" fontSize="13px">
-                Add items to it now.
+                Add to cart items to show here :)
               </Text>
               <NavLink to="/">
                 {" "}
@@ -252,7 +252,7 @@ const CartPage = () => {
                 alignItems="center"
               >
                 <Text color="blue" fontSize="20" fontWeight="400">
-                  Flipkart ({cartData.length})
+                  CartItems ({cartData.length})
                 </Text>
               </Box>
               <Box

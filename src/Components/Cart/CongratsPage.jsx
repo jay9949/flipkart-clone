@@ -289,7 +289,7 @@ const ConsratsPage = () => {
             display="block"
             colorScheme="teal"
             w={"50%"}
-            m="auto"
+            ml="80px"
             mt={"25px"}
             mb={"25px"}
           >
