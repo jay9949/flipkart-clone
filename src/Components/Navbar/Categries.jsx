@@ -127,7 +127,6 @@ export const Categories = () => {
             </PopoverContent>
           </Popover>
 
-          {/* =========================================tv Appliances==== */}
           <Popover trigger='hover' >
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>TVs & Appliances<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
@@ -171,7 +170,6 @@ export const Categories = () => {
               </PopoverBody>
             </PopoverContent>
           </Popover>
-          {/* ======================men will be men=============== */}
           <Popover trigger='hover' >
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }}>Men <ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
@@ -215,7 +213,6 @@ export const Categories = () => {
               </PopoverBody>
             </PopoverContent>
           </Popover>
-          {/* ===================================womem=====     */}
           <Popover trigger='hover' >
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Women <ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
@@ -251,14 +248,11 @@ export const Categories = () => {
           </Popover>
           <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Baby & Kids </Center>
 
-          {/* ================================home &furniyure================ */}
           <Popover trigger='hover' >
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Home & Furniture <ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
             <PopoverContent w='1100px'  >
-
-
 
               <PopoverBody display='flex' justifyContent="space-between">
                 <List w='100%' >

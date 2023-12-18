@@ -5,7 +5,8 @@ import "./bannerStyle.css";
 import { GrFormNext, GrPrevious, GrFormPrevious } from "react-icons/gr";
 import Slider from "react-slick";
 import { Img, Box } from "@chakra-ui/react";
-function FinalBanner() {
+
+const FinalBanner = () => {
   const PreviousBtn = (props) => {
     const { className, onClick } = props;
     return (
@@ -158,6 +159,6 @@ function FinalBanner() {
       {/* tab mode end */}
     </Box>
   );
-}
+};
 
 export default FinalBanner;

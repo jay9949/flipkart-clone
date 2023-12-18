@@ -27,7 +27,6 @@ const Home = () => {
       <Bestselling />
       <Appliances />
       <BannerOffer2 />
-
       <Electronics />
       <Groceries />
       <Mobile />

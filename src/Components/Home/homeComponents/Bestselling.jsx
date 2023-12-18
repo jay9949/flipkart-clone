@@ -20,7 +20,7 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import Slider from "react-slick";
 import { NavLink } from "react-router-dom";
 
-function Bestselling() {
+const Bestselling = () => {
   const [bestselling, setBestselling] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -268,6 +268,6 @@ function Bestselling() {
       {/* mobile version end */}
     </Box>
   );
-}
+};
 
 export default Bestselling;

@@ -19,7 +19,7 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import Slider from "react-slick";
 import { NavLink } from "react-router-dom";
 
-function Groceries() {
+const Groceries = () => {
   const [groceries, setGroceries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -248,6 +248,6 @@ function Groceries() {
       {/* mobile version end */}
     </Box>
   );
-}
+};
 
 export default Groceries;

@@ -20,7 +20,7 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import Slider from "react-slick";
 import { NavLink } from "react-router-dom";
 
-function Mobile() {
+const Mobile = () => {
   const [mobile, setMobile] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -284,6 +284,6 @@ function Mobile() {
       </Box>
     </Box>
   );
-}
+};
 
 export default Mobile;

@@ -16,11 +16,10 @@ import "./fashion.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import { BsFillStarFill } from "react-icons/bs";
 
 import Slider from "react-slick";
 
-function TopOffers() {
+const TopOffers = () => {
   const [topOffers, settopOffers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -239,6 +238,6 @@ function TopOffers() {
       {/* mobile version end */}
     </Box>
   );
-}
+};
 
 export default TopOffers;

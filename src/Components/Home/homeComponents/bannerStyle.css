@@ -1,7 +1,3 @@
-/* .slick-slide img{
-  height: 310px;
-} */
-
 .slick-dots li button {
   position: absolute;
   margin-top: -25px;
@@ -39,11 +35,11 @@
 }
 
 /*big */
-@media only screen and (min-width: 770px) and (max-width: 1200px) {}
+@media only screen and (min-width: 770px) and (max-width: 1200px) {
+}
 
 /* medium screens */
 @media only screen and (min-width: 427px) and (max-width: 769px) {
-
   .slick-arrow.slick-prev,
   .slick-arrow.slick-next {
     background: #fcfcfc;
@@ -63,7 +59,6 @@
 
 /* small screens */
 @media only screen and (min-width: 0px) and (max-width: 426px) {
-
   .slick-arrow.slick-prev,
   .slick-arrow.slick-next {
     display: none;

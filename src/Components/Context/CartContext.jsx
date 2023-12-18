@@ -15,7 +15,7 @@ const CartContextProvider = ({ children }) => {
   localStorage.setItem("orderpageData", JSON.stringify(orderpageData));
 
   const [globalAddress, setGlobalAddress] = useState({});
-  function getData() {
+  const getData = () => {
     setLoading(true);
     fetch(carturl)
       .then((res) => res.json())
@@ -24,7 +24,7 @@ const CartContextProvider = ({ children }) => {
       })
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
-  }
+  };
   useEffect(() => {
     getData();
   }, []);

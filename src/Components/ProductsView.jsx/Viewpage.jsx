@@ -31,7 +31,8 @@ import { BsLightningCharge } from "react-icons/bs";
 import "./viewPage.css";
 import { Link, useParams } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
-function Viewpage() {
+
+const Viewpage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -113,8 +114,6 @@ function Viewpage() {
     );
   }
   const addDatainCart = () => {
-    // viewData[0]
-
     fetch(`https://flipkart-data-h5tg.onrender.com/products`, {
       method: "POST",
       body: JSON.stringify({ ...viewData[0] }),
@@ -135,7 +134,6 @@ function Viewpage() {
     addDatainCart();
   };
 
-  // const [isLargerThan720] = useMediaQuery('(min-width: 720px)')
   return (
     <div>
       <HStack p="10px" display={{ base: "block", md: "flex", lg: "flex" }}>
@@ -638,6 +636,6 @@ function Viewpage() {
       </HStack>
     </div>
   );
-}
+};
 
 export default Viewpage;
