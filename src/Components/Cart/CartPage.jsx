@@ -64,11 +64,7 @@ function CartPage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = useRef();
 
-  // const [cartData, SetCartData] = useState([]);
   const { cartData, SetCartData, getData, loading, setLoading, carturl } = useContext(CartContext);
-
-  // const [ loading, setLoading ] = useState(false);
-
   const initialFocusRef = useRef();
 
   useEffect(() => {
@@ -99,7 +95,6 @@ function CartPage() {
       },
       body: JSON.stringify({ ...quantity, quantity: quantity - 1 }),
     });
-    // setCount(count - 1);
     setLessQuantityState(lessQuantityState - 1);
   };
 

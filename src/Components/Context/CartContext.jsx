@@ -1,51 +1,52 @@
 import { createContext, useEffect, useState } from "react";
-import { json } from "react-router-dom";
-
-
 
 export const CartContext = createContext();
 
+const CartContextProvider = ({ children }) => {
+  const carturl = `https://flipkart-data-h5tg.onrender.com/products`;
 
+  const [cartData, SetCartData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
+  let prevData = JSON.parse(localStorage.getItem("orderpageData")) || [];
 
-const CartContextProvider = ( {children} )=>{
-    const carturl = `https://flipkart-data-h5tg.onrender.com/products`
-    
-    const [cartData, SetCartData] = useState([]);
-    const [ loading, setLoading ] = useState(false);
+  const [orderpageData, setOrderpageData] = useState([...prevData]);
 
-    let prevData = JSON.parse(localStorage.getItem("orderpageData")) ||[]
+  localStorage.setItem("orderpageData", JSON.stringify(orderpageData));
 
-    const [orderpageData, setOrderpageData] = useState([...prevData]);
+  const [globalAddress, setGlobalAddress] = useState({});
+  function getData() {
+    setLoading(true);
+    fetch(carturl)
+      .then((res) => res.json())
+      .then((res) => {
+        SetCartData(res);
+      })
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
+  }
+  useEffect(() => {
+    getData();
+  }, []);
 
-    localStorage.setItem("orderpageData", JSON.stringify(orderpageData));
-
-    const [globalAddress, setGlobalAddress] = useState({})
-    function getData() {
-        setLoading(true);
-        fetch(carturl)
-          .then((res) => res.json())
-          .then((res) => {
-            SetCartData(res)
-          })
-          .catch((err) => console.log(err))
-          .finally(()=>setLoading(false))
-      }
-      useEffect(()=>{
-        getData();
-      },[])
-
-      
-
-return <CartContext.Provider value={{ 
-        cartData, SetCartData,loading,
-        setOrderpageData, orderpageData,
-        setLoading,getData, globalAddress, setGlobalAddress, carturl
-    }} >
-    {children}
-</CartContext.Provider>
-
-}
-
+  return (
+    <CartContext.Provider
+      value={{
+        cartData,
+        SetCartData,
+        loading,
+        setOrderpageData,
+        orderpageData,
+        setLoading,
+        getData,
+        globalAddress,
+        setGlobalAddress,
+        carturl,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
 export default CartContextProvider;
