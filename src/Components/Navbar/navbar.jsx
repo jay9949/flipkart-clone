@@ -5,8 +5,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   Text,
-  Button,
-  useColorMode,
 } from "@chakra-ui/react";
 import { HiUserCircle } from "react-icons/hi";
 import "./navbar.css";
@@ -38,10 +36,9 @@ import {
   Spacer,
   InputGroup,
   Input,
-  InputLeftElement,
   Icon,
 } from "@chakra-ui/react";
-import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   BsFillFilePlusFill,
   BsFillCreditCard2BackFill,
@@ -64,7 +61,7 @@ import {
   DrawerOverlay,
   DrawerContent,
 } from "@chakra-ui/react";
-import { Link, Navigate, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Register from "../Login/Register";
 import { Signup } from "../Login/SignUp";
 import { Authcontext } from "../Context/Authcontext";
@@ -90,6 +87,7 @@ const Navbar = () => {
   const [searchVal, setSearchVal] = useState("");
   useEffect(() => {
     fetchData(searchVal);
+    // eslint-disable-next-line
   }, [searchVal]);
 
   const fetchData = (searchVal) => {
@@ -123,6 +121,8 @@ const Navbar = () => {
   });
 
   const handleSetQuaryUrl = (query_url) => {};
+
+  console.log(handleSetQuaryUrl);
 
   const handleLogout = () => {
     setCorrect(false);

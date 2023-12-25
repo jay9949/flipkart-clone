@@ -32,7 +32,7 @@ import { CartContext } from "../Context/CartContext";
 
 const OrderPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement, setPlacement] = React.useState("bottom");
+  const [placement] = React.useState("bottom");
   const [Order, setOrder] = useState([]);
 
   const { orderpageData } = useContext(CartContext);
@@ -44,6 +44,7 @@ const OrderPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     getData();
+    // eslint-disable-next-line
   }, []);
 
   const FormatDate = () => {

@@ -173,6 +173,7 @@ const Products = () => {
     if (isLargerThan720) {
       setPage(1);
     }
+    // eslint-disable-next-line
   }, []);
   return (
     <Box

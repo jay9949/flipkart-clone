@@ -21,11 +21,13 @@ const DeliveryPage = () => {
   let discount = 0;
   let totalAmount = 0;
 
-  cartData.map((data) => {
-    sellingPrice += data.old_price * data.quantity;
-    discount += data.discount;
-    totalAmount += data.new_price * data.quantity;
-  });
+  {
+    cartData.map((data) => {
+      sellingPrice += data.old_price * data.quantity;
+      discount += data.discount;
+      totalAmount += data.new_price * data.quantity;
+    });
+  }
   discount = Math.floor(((discount / cartData.length) * sellingPrice) / 100);
   const [allFilled, setAllFilled] = useState(true);
 
@@ -56,13 +58,13 @@ const DeliveryPage = () => {
   const handelCheckAddress = () => {
     setAllFilled(true);
     if (
-      address.Name != "" &&
-      address.Number != "" &&
-      address.Pincode != "" &&
-      address.Email != "" &&
-      address.Address != "" &&
-      address.City != "" &&
-      address.State != ""
+      address.Name !== "" &&
+      address.Number !== "" &&
+      address.Pincode !== "" &&
+      address.Email !== "" &&
+      address.Address !== "" &&
+      address.City !== "" &&
+      address.State !== ""
     ) {
       fetch(`https://flipkart-data-h5tg.onrender.com/address`, {
         method: "POST",

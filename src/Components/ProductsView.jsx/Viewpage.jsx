@@ -45,6 +45,7 @@ const Viewpage = () => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line
   }, [item_id]);
   const fetchData = async () => {
     setLoading(true);
