@@ -11,7 +11,6 @@ import {
   Img,
   Text,
   WrapItem,
-  Flex,
 } from "@chakra-ui/react";
 import "./fashion.css";
 import "slick-carousel/slick/slick.css";
@@ -28,7 +27,7 @@ const Bestselling = () => {
     const { className, onClick } = props;
     return (
       <div className={className} onClick={onClick}>
-        <h1 style={{ color: "black", fontSize: "45px" }}>
+        <h1 style={{ color: "black", fontSize: "25px" }}>
           {" "}
           <GrFormPrevious />{" "}
         </h1>
@@ -39,7 +38,7 @@ const Bestselling = () => {
     const { className, onClick } = props;
     return (
       <Box className={className} onClick={onClick}>
-        <h1 style={{ fontWeight: "bolder", fontSize: "45px", color: "black" }}>
+        <h1 style={{ fontWeight: "bolder", fontSize: "25px", color: "black" }}>
           {" "}
           <GrFormNext />{" "}
         </h1>
@@ -103,7 +102,7 @@ const Bestselling = () => {
       <>
         <Box padding="6" boxShadow="lg" bg="white">
           <SkeletonCircle size="100" />
-          <SkeletonText mt="4" noOfLines={8} spacing="4" />
+          <SkeletonText mt="4" noOfLines={4} spacing="4" />
         </Box>
       </>
     );
