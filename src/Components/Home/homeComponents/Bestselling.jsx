@@ -45,14 +45,7 @@ const Bestselling = () => {
       </Box>
     );
   };
-  // var settings = {
-  //     infinite: false,
-  //     speed: 500,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 4,
-  //     prevArrow: <PreviousBtn />,
-  //     nextArrow: <NextBtn />
-  // }
+
   var settings = {
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
