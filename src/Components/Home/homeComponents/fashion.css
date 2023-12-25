@@ -1,8 +1,8 @@
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-  background: #fcfcfc;
-  width: 47px;
-  height: 104px;
+  background: #919191 !important;
+  width: 40px !important;
+  height: 80px !important;
   display: flex;
   align-items: center;
   justify-content: center;

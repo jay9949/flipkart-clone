@@ -27,9 +27,11 @@ const Fashion = () => {
   const [category, setCategory] = useState({});
   const PreviousBtn = (props) => {
     const { className, onClick } = props;
+
+    console.log(category);
     return (
       <div className={className} onClick={onClick}>
-        <h1 style={{ color: "black", fontSize: "45px" }}>
+        <h1 style={{ color: "black", fontSize: "25px" }}>
           {" "}
           <GrFormPrevious />{" "}
         </h1>
@@ -40,7 +42,7 @@ const Fashion = () => {
     const { className, onClick } = props;
     return (
       <Box className={className} onClick={onClick}>
-        <h1 style={{ fontWeight: "bolder", fontSize: "45px", color: "black" }}>
+        <h1 style={{ fontWeight: "bolder", fontSize: "25px", color: "black" }}>
           {" "}
           <GrFormNext />{" "}
         </h1>
@@ -91,6 +93,7 @@ const Fashion = () => {
   useEffect(() => {
     getFashion();
     setCategory(fashion[0]);
+    // eslint-disable-next-line
   }, []);
 
   if (loading) {
