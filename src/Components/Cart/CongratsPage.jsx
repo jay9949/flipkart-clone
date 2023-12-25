@@ -26,7 +26,7 @@ const ConsratsPage = () => {
     let month = new Date().getMonth();
     month = month + 2;
     const year = new Date().getFullYear();
-    return `15 / ${month} / ${year}`;
+    return `19 / ${month} / ${year}`;
   };
 
   return (
