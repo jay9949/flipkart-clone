@@ -47,7 +47,7 @@ const url = `https://flipkart-data-h5tg.onrender.com`;
 const Products = () => {
   const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
   const [page, setPage] = useState(1);
-  const perPagelimitProduct = 16;
+  const perPagelimitProduct = 15;
   const [total, setTotal] = useState(0);
 
   const { category_name } = useParams();

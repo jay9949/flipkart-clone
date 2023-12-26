@@ -17,7 +17,7 @@ const ProductItem = (props) => {
           overflow="hidden"
           m={isLargerThan720 ? "0px 8px" : ""}
           pos={"relative"}
-          _hover={{ boxShadow: "0 3px 16px 0 rgb(0 0 0 / 11%)" }}
+          _hover={{ boxShadow: "0 3px 16px 0 rgb(0 0 0 / 12%)" }}
           transition="box-shadow .2s ease-in-out;"
           h={"100%"}
         >
