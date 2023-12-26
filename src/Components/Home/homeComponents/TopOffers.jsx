@@ -51,8 +51,8 @@ const TopOffers = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -113,15 +113,21 @@ const TopOffers = () => {
   }
   return (
     <Box
-      display={"flex"}
       mt="20px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
     >
-      <Box w="25%" m="auto" textAlign={"center"} className="dealsBox">
+      <Box
+        w="100%"
+        p={"0 20px"}
+        textAlign={"center"}
+        display={"flex"}
+        justifyContent={"space-between"}
+        className="dealsBox"
+      >
         <Text
-          paddingTop={{ base: "120px", md: "120px", lg: "70px" }}
+          paddingTop={{ base: "120px", md: "120px", lg: "20px" }}
           fontSize={{ base: "10px", md: "20px", lg: "30px" }}
         >
           {" "}
@@ -137,14 +143,9 @@ const TopOffers = () => {
             VIEW ALL
           </Button>
         </WrapItem>
-        <Img
-          mt="2%"
-          src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlzY291bnR8ZW58MHx8MHx8&w=1000&q=80"
-          alt="fg"
-        />
       </Box>
       <Box
-        w={{ base: "80%", md: "75%", lg: "84%" }}
+        w={{ base: "80%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"
       >

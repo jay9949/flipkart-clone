@@ -46,21 +46,14 @@ const Mobile = () => {
       </Box>
     );
   };
-  // var settings = {
-  //     infinite: false,
-  //     speed: 500,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 4,
-  //     prevArrow: <PreviousBtn />,
-  //     nextArrow: <NextBtn />
-  // }
+
   var settings = {
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -121,15 +114,21 @@ const Mobile = () => {
   }
   return (
     <Box
-      display={"flex"}
       mt="20px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
     >
-      <Box w="25%" m="auto" textAlign={"center"} className="dealsBox">
+      <Box
+        w="100%"
+        p={"0 20px"}
+        textAlign={"center"}
+        display={"flex"}
+        justifyContent={"space-between"}
+        className="dealsBox"
+      >
         <Text
-          paddingTop={{ base: "120px", md: "120px", lg: "70px" }}
+          paddingTop={{ base: "120px", md: "120px", lg: "20px" }}
           fontSize={{ base: "10px", md: "20px", lg: "30px" }}
         >
           {" "}
@@ -145,13 +144,9 @@ const Mobile = () => {
             <NavLink to="./products/mobiles">VIEW ALL</NavLink>
           </Button>
         </WrapItem>
-        <Img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQJ6xBHIA9e3Pf3QMok5yTZn3XF2Z3KcZ3w&usqp=CAU"
-          alt="fg"
-        />
       </Box>
       <Box
-        w={{ base: "80%", md: "74%", lg: "84%" }}
+        w={{ base: "80%", md: "74%", lg: "100%" }}
         m="auto"
         className="OffSlider"
       >

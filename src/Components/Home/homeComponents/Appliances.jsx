@@ -51,8 +51,8 @@ const Appliances = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -113,16 +113,22 @@ const Appliances = () => {
   }
   return (
     <Box
-      display={"flex"}
-      mt="20px"
+      mt="10px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
     >
-      <Box w="25%" m="auto" textAlign={"center"} className="dealsBox">
+      <Box
+        display={"flex"}
+        width="100%"
+        padding={"0 20px"}
+        justifyContent={"space-between"}
+        m="auto"
+        textAlign={"center"}
+        className="dealsBox"
+      >
         <Text
-          p="8px"
-          paddingTop={{ base: "120px", md: "120px", lg: "70px" }}
+          paddingTop={{ base: "120px", md: "120px", lg: "20px" }}
           fontSize={{ base: "10px", md: "20px", lg: "30px" }}
         >
           {" "}
@@ -132,19 +138,15 @@ const Appliances = () => {
         <WrapItem pt="20px">
           <Button
             fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-            m={"auto"}
+            mt="25%"
             colorScheme="messenger"
           >
             <NavLink to="./products/appliances">VIEW ALL </NavLink>
           </Button>
         </WrapItem>
-        <Img
-          src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/964e5530abdf3180.jpg?q=90"
-          alt="fg"
-        />
       </Box>
       <Box
-        w={{ base: "80%", md: "75%", lg: "84%" }}
+        w={{ base: "80%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"
       >
@@ -158,7 +160,7 @@ const Appliances = () => {
                     maxWidth="190px"
                     h="200px"
                     m="auto"
-                    _hover={{ transform: "scale(1.1)", transition: "400ms" }}
+                    _hover={{ transform: "scale(1.1)", transition: "600ms" }}
                     p="10px"
                     src={item.image}
                     alt=""

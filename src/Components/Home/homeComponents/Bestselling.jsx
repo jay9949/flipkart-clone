@@ -51,8 +51,8 @@ const Bestselling = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -113,43 +113,38 @@ const Bestselling = () => {
   }
   return (
     <Box
-      display={"flex"}
-      mt="20px"
+      mt="10px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
     >
       <Box
-        width="25%"
-        h="300px"
-        m="auto"
-        textAlign={"center"}
+        display={"flex"}
+        width="100%"
+        padding={"0 20px"}
+        justifyContent={"space-between"}
         className="dealsBox"
       >
         <Text
-          paddingTop={{ base: "120px", md: "100px", lg: "70px" }}
+          paddingTop={{ base: "120px", md: "100px", lg: "20px" }}
           fontSize={{ base: "10px", md: "20px", lg: "30px" }}
         >
           {" "}
           Living Room Decorations{" "}
         </Text>
 
-        <WrapItem mt="20px">
+        <WrapItem>
           <Button
             fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-            m={"auto"}
+            mt="50%"
             colorScheme="messenger"
           >
             <NavLink to="./products/home">VIEW ALL</NavLink>
           </Button>
         </WrapItem>
-        <Img
-          src="https://rukminim1.flixcart.com/reco/278/278/images/Reco_DTO.jpg?q=90"
-          alt="fg"
-        />
       </Box>
       <Box
-        w={{ base: "80%", md: "75%", lg: "84%" }}
+        w={{ base: "100%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"
       >

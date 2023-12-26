@@ -51,8 +51,8 @@ const Groceries = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -113,37 +113,39 @@ const Groceries = () => {
   }
   return (
     <Box
-      display={"flex"}
       mt="20px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
     >
-      <Box w="25%" m="auto" textAlign={"center"} className="dealsBox">
+      <Box
+        display={"flex"}
+        w="100%"
+        p={"0 20px"}
+        justifyContent={"space-between"}
+        textAlign={"center"}
+        className="dealsBox"
+      >
         <Text
-          paddingTop={{ base: "120px", md: "120px", lg: "70px" }}
+          paddingTop={{ base: "120px", md: "120px", lg: "20px" }}
           fontSize={{ base: "19px", md: "20px", lg: "30px" }}
         >
           {" "}
           Rush Hour
         </Text>
 
-        <WrapItem mt="10%">
+        <WrapItem>
           <Button
             fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-            m={"auto"}
+            mt="28%"
             colorScheme="messenger"
           >
             <NavLink to="./products/grocery">VIEW ALL </NavLink>
           </Button>
         </WrapItem>
-        <Img
-          src="https://www.rvsmedia.co.uk/wp-content/uploads/2021/07/Apparel-Industry_Article_2.jpg"
-          alt="fg"
-        />
       </Box>
       <Box
-        w={{ base: "80%", md: "75%", lg: "84%" }}
+        w={{ base: "80%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"
       >

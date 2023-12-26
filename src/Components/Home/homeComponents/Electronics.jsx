@@ -46,21 +46,14 @@ const Electronics = () => {
       </Box>
     );
   };
-  // var settings = {
-  //     infinite: false,
-  //     speed: 500,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 4,
-  //     prevArrow: <PreviousBtn />,
-  //     nextArrow: <NextBtn />
-  // }
+
   var settings = {
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
 
     responsive: [
       {
@@ -122,16 +115,16 @@ const Electronics = () => {
   return (
     <div>
       <Box
-        display={"flex"}
         mt="20px"
         boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
         p="1"
         bg="white"
       >
         <Box
-          width="25%"
-          h="300px"
-          m="auto"
+          display={"flex"}
+          width="100%"
+          justifyContent={"space-between"}
+          p={"0 20px"}
           textAlign={"center"}
           className="dealsBox"
         >
@@ -143,22 +136,18 @@ const Electronics = () => {
             Best Of Electronics
           </Text>
 
-          <WrapItem pt="30px">
+          <WrapItem pt="20px">
             <Button
               fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-              m={"auto"}
+              mt="20%"
               colorScheme="messenger"
             >
               <NavLink to={`/products/electronics`}>VIEW ALL</NavLink>
             </Button>
           </WrapItem>
-          <Img
-            src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90"
-            alt="fg"
-          />
         </Box>
         <Box
-          w={{ base: "80%", md: "75%", lg: "84%" }}
+          w={{ base: "80%", md: "75%", lg: "100%" }}
           m="auto"
           className="OffSlider"
         >
