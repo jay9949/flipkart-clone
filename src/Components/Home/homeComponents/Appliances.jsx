@@ -113,7 +113,7 @@ const Appliances = () => {
   }
   return (
     <Box
-      mt="10px"
+      mt="20px"
       boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
       p="1"
       bg="white"
@@ -121,7 +121,7 @@ const Appliances = () => {
       <Box
         display={"flex"}
         width="100%"
-        padding={"0 20px"}
+        p={"0 20px"}
         justifyContent={"space-between"}
         m="auto"
         textAlign={"center"}

@@ -136,7 +136,7 @@ const Bestselling = () => {
         <WrapItem>
           <Button
             fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-            mt="50%"
+            mt="30%"
             colorScheme="messenger"
           >
             <NavLink to="./products/home">VIEW ALL</NavLink>

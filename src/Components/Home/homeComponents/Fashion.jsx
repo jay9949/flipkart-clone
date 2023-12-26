@@ -128,7 +128,7 @@ const Fashion = () => {
         <Box
           display={"flex"}
           width="100%"
-          padding={"0 20px"}
+          p={"0 20px"}
           justifyContent={"space-between"}
           className="dealsBox"
         >
@@ -143,7 +143,7 @@ const Fashion = () => {
           <WrapItem>
             <Button
               fontSize={{ base: "6px", md: "9px", lg: "12px" }}
-              mt="50%"
+              mt="35%"
               colorScheme="messenger"
             >
               <NavLink to="./products/fashion">VIEW ALL </NavLink>
