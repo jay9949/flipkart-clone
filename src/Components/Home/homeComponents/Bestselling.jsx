@@ -144,6 +144,7 @@ const Bestselling = () => {
         </WrapItem>
       </Box>
       <Box
+        display={{ base: "none" }}
         w={{ base: "100%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"

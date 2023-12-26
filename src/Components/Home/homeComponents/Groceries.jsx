@@ -145,6 +145,7 @@ const Groceries = () => {
         </WrapItem>
       </Box>
       <Box
+        display={{ base: "none" }}
         w={{ base: "80%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"

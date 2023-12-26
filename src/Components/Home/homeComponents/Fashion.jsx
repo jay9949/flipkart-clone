@@ -151,6 +151,7 @@ const Fashion = () => {
           </WrapItem>
         </Box>
         <Box
+          display={{ base: "none" }}
           w={{ base: "60%", md: "55%", lg: "100%" }}
           m="auto"
           className="OffSlider"
