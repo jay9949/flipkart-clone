@@ -27,7 +27,7 @@ const Groceries = () => {
     const { className, onClick } = props;
     return (
       <div className={className} onClick={onClick}>
-        <h1 style={{ color: "black", fontSize: "45px" }}>
+        <h1 style={{ color: "black", fontSize: "25px" }}>
           {" "}
           <GrFormPrevious />{" "}
         </h1>
@@ -38,7 +38,7 @@ const Groceries = () => {
     const { className, onClick } = props;
     return (
       <Box className={className} onClick={onClick}>
-        <h1 style={{ fontWeight: "bolder", fontSize: "45px", color: "black" }}>
+        <h1 style={{ fontWeight: "bolder", fontSize: "25px", color: "black" }}>
           {" "}
           <GrFormNext />{" "}
         </h1>

@@ -42,7 +42,7 @@
 @media only screen and (min-width: 427px) and (max-width: 769px) {
   .slick-arrow.slick-prev,
   .slick-arrow.slick-next {
-    background: #fcfcfc;
+    background: #ffffff;
     width: 30px;
     height: 70px;
     display: flex;
