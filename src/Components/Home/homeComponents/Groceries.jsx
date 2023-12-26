@@ -119,7 +119,7 @@ const Groceries = () => {
       bg="white"
     >
       <Box
-        display={"flex"}
+        display={{ base: "none", md: "none", lg: "flex" }}
         w="100%"
         p={"0 20px"}
         justifyContent={"space-between"}

@@ -119,7 +119,7 @@ const Bestselling = () => {
       bg="white"
     >
       <Box
-        display={"flex"}
+        display={{ base: "none", md: "none", lg: "flex" }}
         width="100%"
         padding={"0 20px"}
         justifyContent={"space-between"}

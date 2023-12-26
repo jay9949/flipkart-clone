@@ -122,7 +122,7 @@ const TopOffers = () => {
         w="100%"
         p={"0 20px"}
         textAlign={"center"}
-        display={"flex"}
+        display={{ base: "none", md: "none", lg: "flex" }}
         justifyContent={"space-between"}
         className="dealsBox"
       >

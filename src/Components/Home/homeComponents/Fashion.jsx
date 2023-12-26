@@ -126,14 +126,14 @@ const Fashion = () => {
         bg="white"
       >
         <Box
-          display={"flex"}
+          display={{ base: "none", md: "none", lg: "flex" }}
           width="100%"
           p={"0 20px"}
           justifyContent={"space-between"}
           className="dealsBox"
         >
           <Text
-            paddingTop={{ base: "120px", md: "120px", lg: "20px" }}
+            paddingTop={{ base: "20px", md: "20px", lg: "20px" }}
             fontSize={{ base: "10px", md: "20px", lg: "30px" }}
           >
             {" "}

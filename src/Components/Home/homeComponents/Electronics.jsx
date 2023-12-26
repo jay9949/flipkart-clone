@@ -121,7 +121,7 @@ const Electronics = () => {
         bg="white"
       >
         <Box
-          display={"flex"}
+          display={{ base: "none", md: "none", lg: "flex" }}
           width="100%"
           justifyContent={"space-between"}
           p={"0 20px"}
