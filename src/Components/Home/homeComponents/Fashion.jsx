@@ -55,8 +55,8 @@ const Fashion = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 6,
+    slidesToScroll: 6,
 
     responsive: [
       {
@@ -151,7 +151,7 @@ const Fashion = () => {
           </WrapItem>
         </Box>
         <Box
-          display={{ base: "none" }}
+          display={{ base: "none", lg: "block" }}
           w={{ base: "60%", md: "55%", lg: "100%" }}
           m="auto"
           className="OffSlider"

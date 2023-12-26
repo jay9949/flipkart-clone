@@ -51,8 +51,8 @@ const TopOffers = () => {
     nextArrow: <NextBtn />,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 6,
+    slidesToScroll: 6,
 
     responsive: [
       {
@@ -145,7 +145,7 @@ const TopOffers = () => {
         </WrapItem>
       </Box>
       <Box
-        display={{ base: "none" }}
+        display={{ base: "none", lg: "block" }}
         w={{ base: "80%", md: "75%", lg: "100%" }}
         m="auto"
         className="OffSlider"
