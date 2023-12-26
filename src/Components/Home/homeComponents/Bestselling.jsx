@@ -161,6 +161,7 @@ const Bestselling = () => {
                     maxWidth="190px"
                     h="240px"
                     m="auto"
+                    rounded={"15px"}
                     _hover={{ transform: "scale(1.1)", transition: "400ms" }}
                     p="10px"
                     src={item.image}
